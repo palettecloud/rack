@@ -294,7 +294,7 @@ module Rack
         end
       end
 
-      server.run wrapped_app, options, &blk
+      server.run wrapped_app, **options, &blk
     end
 
     def server
